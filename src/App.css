@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  --main-color: #212529;
+  --border-color: #dee2e6;
+  --accent-color: #377789;
+  --border-radius: 5px;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+section h2 {
+  padding-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 15px;
+}
+
+.buttons .btn {
+  flex-grow: 1;
+}
+
+.buttons .set {
+  background-color: #f6f3f3;
+  color: #818181;
+}
+
+.buttons .clear {
+  background-color: #fff1f1;
+  color: #b44545;
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+  padding: 0.3em 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background-color: #3f8aa4;
+}
+
+/*   Form   */
+
+form {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form .group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form input {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+form .btn {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+}
+
+/*   Preview   */
+
+.preview__content {
+  width: min(90%, 800px);
+  margin-inline: auto;
+}
+
+.preview__h2 {
+  text-transform: uppercase;
+  color: #757575;
+}
+
+.preview__contacts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.preview__contacts__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cv-section {
+  margin-bottom: 10px;
+}
+
+.cv-section__date {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    padding: 20px;
+  }
+}
